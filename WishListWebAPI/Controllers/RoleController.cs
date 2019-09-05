@@ -11,7 +11,7 @@ namespace WishListWebAPI.Controllers
 {
     public class RoleController : ApiController
     {
-        WishListDBEntities wishList = new WishListDBEntities();
+        WishListDBEntities1 wishList = new WishListDBEntities1();
         //../api/Role
         [HttpGet]
         public IQueryable<Role> GetAllRoles()

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Naresh Thota\source\repos\WishListWebAPI\WishListWebAPI\Models\RoleModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\ASP.NET MVC\WishList\WishListWebAPI\Models\RoleAndUserDetailsModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

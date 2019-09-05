@@ -120,15 +120,15 @@
       <DependentUpon>CategoryModel.edmx</DependentUpon>
       <LastGenOutput>CategoryModel.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\RoleModel.Context.tt">
+    <Content Include="Models\RoleAndUserDetailsModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>RoleModel.Context.cs</LastGenOutput>
-      <DependentUpon>RoleModel.edmx</DependentUpon>
+      <DependentUpon>RoleAndUserDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>RoleAndUserDetailsModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\RoleModel.tt">
+    <Content Include="Models\RoleAndUserDetailsModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RoleModel.edmx</DependentUpon>
-      <LastGenOutput>RoleModel.cs</LastGenOutput>
+      <DependentUpon>RoleAndUserDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>RoleAndUserDetailsModel.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -137,6 +137,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -159,40 +160,43 @@
       <DependentUpon>CategoryModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Role.cs">
-      <DependentUpon>RoleModel.tt</DependentUpon>
+      <DependentUpon>RoleAndUserDetailsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\RoleModel.Context.cs">
+    <Compile Include="Models\RoleAndUserDetailsModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RoleModel.Context.tt</DependentUpon>
+      <DependentUpon>RoleAndUserDetailsModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\RoleModel.cs">
+    <Compile Include="Models\RoleAndUserDetailsModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RoleModel.tt</DependentUpon>
+      <DependentUpon>RoleAndUserDetailsModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\RoleModel.Designer.cs">
+    <Compile Include="Models\RoleAndUserDetailsModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>RoleModel.edmx</DependentUpon>
+      <DependentUpon>RoleAndUserDetailsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserDetail.cs">
+      <DependentUpon>RoleAndUserDetailsModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\RoleModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RoleModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\RoleModel.edmx.diagram">
-      <DependentUpon>RoleModel.edmx</DependentUpon>
-    </Content>
     <EntityDeploy Include="Models\CategoryModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CategoryModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <Content Include="Models\CategoryModel.edmx.diagram">
       <DependentUpon>CategoryModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\RoleAndUserDetailsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RoleAndUserDetailsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\RoleAndUserDetailsModel.edmx.diagram">
+      <DependentUpon>RoleAndUserDetailsModel.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">

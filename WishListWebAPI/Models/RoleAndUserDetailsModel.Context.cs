@@ -13,10 +13,10 @@ namespace WishListWebAPI.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WishListDBEntities : DbContext
+    public partial class WishListDBEntities1 : DbContext
     {
-        public WishListDBEntities()
-            : base("name=WishListDBEntities")
+        public WishListDBEntities1()
+            : base("name=WishListDBEntities1")
         {
         }
     
@@ -26,5 +26,6 @@ namespace WishListWebAPI.Models
         }
     
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<UserDetail> UserDetails { get; set; }
     }
 }
