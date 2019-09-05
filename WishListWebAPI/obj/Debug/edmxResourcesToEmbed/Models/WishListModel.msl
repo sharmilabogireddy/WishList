@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WishListDBModel1StoreContainer" CdmEntityContainer="WishListDBEntities2">
+    <EntitySetMapping Name="WishLists">
+      <EntityTypeMapping TypeName="WishListDBModel1.WishList">
+        <MappingFragment StoreEntitySet="WishList">
+          <ScalarProperty Name="WishId" ColumnName="WishId" />
+          <ScalarProperty Name="WishType" ColumnName="WishType" />
+          <ScalarProperty Name="WishListDesc" ColumnName="WishListDesc" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

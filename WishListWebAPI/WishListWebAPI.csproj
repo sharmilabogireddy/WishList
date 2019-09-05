@@ -130,6 +130,16 @@
       <DependentUpon>RoleAndUserDetailsModel.edmx</DependentUpon>
       <LastGenOutput>RoleAndUserDetailsModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\WishListModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WishListModel.edmx</DependentUpon>
+      <LastGenOutput>WishListModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\WishListModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WishListModel.edmx</DependentUpon>
+      <LastGenOutput>WishListModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +148,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\UserDetailsController.cs" />
+    <Compile Include="Controllers\WishListController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,6 +191,24 @@
     <Compile Include="Models\UserDetail.cs">
       <DependentUpon>RoleAndUserDetailsModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\WishList.cs">
+      <DependentUpon>WishListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WishListModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WishListModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WishListModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WishListModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WishListModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WishListModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +226,13 @@
     </EntityDeploy>
     <Content Include="Models\RoleAndUserDetailsModel.edmx.diagram">
       <DependentUpon>RoleAndUserDetailsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\WishListModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WishListModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\WishListModel.edmx.diagram">
+      <DependentUpon>WishListModel.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
